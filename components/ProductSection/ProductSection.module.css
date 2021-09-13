@@ -1,0 +1,175 @@
+.wrapper {
+  margin: 90px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 69px;
+}
+
+.heading_on_filter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 69px;
+  padding: 30px 34px;
+}
+.heading_text {
+  display: flex;
+}
+
+.sort_section {
+  display: flex;
+}
+
+.sort_section > div {
+  display: flex;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #9b9b9b;
+}
+
+.sort_section > div > img {
+  width: 12px;
+}
+
+.sort_section > select {
+  border: none;
+  width: 80px;
+  font-family: "Archivo", sans-serif;
+}
+
+.bold {
+  font-size: 30px;
+}
+
+.light {
+  color: #9b9b9b;
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+.productSection {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+}
+
+.filterSide {
+  width: 50%;
+}
+
+.filterSide p {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.categoryfilterItems {
+  margin-top: 43px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border-bottom: 1px solid #c2c2c2;
+  width: 40%;
+  padding-bottom: 40px;
+}
+
+.pricefilterItems {
+  margin-top: 43px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 40%;
+  padding-bottom: 40px;
+}
+
+.filterItems input:checked {
+  background-color: #fff;
+  color: #000;
+}
+
+.productItems {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  text-align: right;
+}
+
+.paginationButtons {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 15%;
+  list-style-type: none;
+  cursor: pointer;
+  color: var(--color-grey);
+}
+
+.prevButton > svg,
+.nextButton > svg {
+  width: 7px;
+}
+
+.pagActive {
+  color: var(--color-black);
+}
+
+.hide {
+  display: none;
+}
+
+.mobile_filter {
+  opacity: 0;
+}
+.notFound {
+  display: flex;
+  margin-top: 140px;
+  justify-content: center;
+  width: 100%;
+}
+
+.noMargin {
+  margin: 0 !important;
+  background: #cccccc;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+}
+
+/* media queries */
+@media only screen and (max-width: 700px) {
+  .sort_section,
+  .filterSide {
+    display: none;
+  }
+  .mobile_filter {
+    opacity: 1;
+  }
+  .productSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .productItems {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    margin: 10px;
+  }
+
+  .bold,
+  .light {
+    font-size: 18px;
+  }
+
+  .paginationButtons {
+    width: 50%;
+  }
+}
