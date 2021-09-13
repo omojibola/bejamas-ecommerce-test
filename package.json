@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^11.1.2",
     "firebase": "^8.6.2",
     "next": "11.1.2",
     "react": "17.0.2",

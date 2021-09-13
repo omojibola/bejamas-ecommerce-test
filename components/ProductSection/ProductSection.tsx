@@ -131,7 +131,7 @@ const ProductSection = ({ addToCart }: Iprops) => {
           className={styles.mobile_filter}
           onClick={() => setShowMobileFilter(!showMobileFilter)}
         >
-          <img src="/assets/icons/filter.svg" alt="" />
+          <img src="/assets/icons/filter.svg" alt="" width={20} height={20} />
         </div>
         {showMobileFilter && (
           <MobileFilter
@@ -149,6 +149,8 @@ const ProductSection = ({ addToCart }: Iprops) => {
               alt=""
               onClick={() => setAsc(!asc)}
               style={{ cursor: "pointer" }}
+              width={20}
+              height={20}
             />
             <p>Sort By</p>
           </div>
